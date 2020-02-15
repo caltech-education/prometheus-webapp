@@ -28,7 +28,8 @@ module.exports = {
     'jsx-a11y'
   ],
   rules: {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/extensions": [".js", ".jsx", ".json", ".ts", ".tsx"],
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "no-param-reassign": 0,
     "import/prefer-default-export": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
