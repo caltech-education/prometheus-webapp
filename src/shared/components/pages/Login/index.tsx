@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from '@reach/router';
-import imageTeste from '../../../assets/images/success.png';
+
+import imageTeste from 'shared/assets/images/success.png';
+//enfia esse import absoluto no cu
+
 
 // To-Do --- resolver import por absolute path e import de modulos scss(erro)
 // To-Do --- verificar sobre atualizaçao de versoes de pacotes e se for o caso travar as versoes no package.json

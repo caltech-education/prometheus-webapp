@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 import { Button } from 'antd';
-import styles from './Home.module.scss';
+// import styles from './Home.module.scss';
 
 const Home: React.FC<RouteComponentProps> = () => (
   <>
