@@ -5,12 +5,12 @@ import Loadable from 'react-loadable';
 import Login from './shared/components/pages/Login';
 
 const Tutor = Loadable({
-  loader: () => import('./modules/tutor'),
+  loader: () => import('./views/tutor'),
   loading: () => null,
 });
 
 const Admin = Loadable({
-  loader: () => import('./modules/admin'),
+  loader: () => import('./views/admin'),
   loading: () => null,
 });
 
