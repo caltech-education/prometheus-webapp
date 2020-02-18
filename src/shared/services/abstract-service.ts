@@ -6,7 +6,7 @@ const instance: AxiosInstance = axios.create({
     baseURL: `${ process.env.REACT_APP_URL }/`,
 });
 
-export class AbstractService<T extends AbstractModel> {
+export abstract class AbstractService<T extends AbstractModel> {
     protected url: string | undefined = process.env.REACT_APP_URL;
     protected http: AxiosInstance;
     private type: string;
@@ -38,7 +38,7 @@ export class AbstractService<T extends AbstractModel> {
 
     find(url: string = ''): Promise<IResponse<T>> {
         return this
-            .request<IResponse<T>>({ method: 'GET', ...{ url: `${ this.type + url }` } });
+            .request<IResponse<T>>({ method: 'GET', ...{ url: `${ this.type + '/' + url }` } });
     }
 
     findAll(url: string = ''): Promise<IPageableResponse<T>> {
